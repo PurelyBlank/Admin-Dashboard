@@ -1,9 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
-img {
+.svg {
+    filter: invert(1);
     width: 25px;
 }
 
@@ -11,10 +16,46 @@ img {
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    height: 100vh;
 }
 
 .sidebar {
     grid-row: 1 / -1;
+    background-color: #334155;
+    color: white;
+    padding: 20px 0px 0px 20px;
+}
+
+.sidebar--logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1;
+}
+
+.sidebar--logo > img {
+    width: 40px;
+}
+
+.sidebar--shortcuts {
+    padding: 50px 0px 0px 5px;
+    font-size: 1.1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 30px;
+}
+
+.sidebar--shortcuts > li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar--communities {
+    padding-bottom: 40px;
 }
 
 .topbar {
