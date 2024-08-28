@@ -225,9 +225,36 @@ h6 {
 
 .update p {
     font-size: 15px;
+    font-weight: lighter;
 }
 
 .trending {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-}   
+} 
+
+.trends {
+    background-color: #f1f5f9;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trend-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.trends img {
+    width: 50px;
+}
+
+.trend-description {
+    font-size: 15px;
+    font-weight: lighter;
+}
