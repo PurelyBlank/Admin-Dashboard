@@ -12,11 +12,14 @@
     width: 25px;
 }
 
+.svg.magnify, .svg.ring{
+    filter: invert(0);
+}
+
 .main--container {
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
-    gap: 20px;
     height: 100vh;
 }
 
@@ -61,6 +64,74 @@
 .topbar {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    background-color: #f1f5f9;
+    padding: 10px 40px 0px 40px;
+}
+
+.topbar--toptop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar--search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topbar--user {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.pfp {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.search-bar {
+    width: 600px;
+    height: 30px;
+    background-color: #cbd5e1;
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    resize: none;
+    padding-left: 10px;
+}
+
+.topbar--topbot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar--greeting {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.topbar--greeting > img {
+    width: 80px;
+}
+
+.topbar--buttons {
+    display: flex;
+    gap: 50px;
+}
+
+.topbar--buttons > button {
+    padding: 15px 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #475569;
+    color: white;
 }
 
 .main--body {
@@ -69,6 +140,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 0.75fr;
     grid-template-rows: 1fr 1fr;
+    background-color: #64748b;
 }
 
 .projects {
